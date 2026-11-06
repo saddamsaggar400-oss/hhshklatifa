@@ -1660,10 +1660,10 @@ body {
 .w-account-identity { text-align: center; padding: 28px 24px; background: var(--panel); }
 .w-owner-photo { display: block; width: 200px; height: 200px; border-radius: 50%; margin: 0 auto 22px; padding: 0; overflow: hidden; border: 0; background: var(--line); cursor: pointer; }
 .w-owner-photo img { width: 100%; height: 100%; object-fit: cover; }
-.w-account-identity h3 { justify-content: center; font-size: 21px; line-height: 1.6; margin: 0 0 7px; }
+.w-account-identity h3 { display: flex; justify-content: center; font-size: 21px; line-height: 1.6; margin: 0 0 7px; }
 .w-owner-handle { color: var(--muted); font-size: 14px; }
-.w-account-about, .w-account-statuses { padding: 20px 24px; border-top: 8px solid var(--bg); }
-.w-account-about h4, .w-account-section-title h4 { color: var(--accent); font-size: 14px; font-weight: 500; margin: 0 0 12px; }
+.w-account-about, .w-account-statuses { padding: 20px 24px; border-top: 8px solid var(--canvas); }
+.w-account-about h4, .w-account-section-title h4 { color: var(--green); font-size: 14px; font-weight: 500; margin: 0 0 12px; }
 .w-account-about p { margin: 0; white-space: pre-wrap; line-height: 1.8; }
 .w-account-section-title { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
 .w-account-section-title h4 { margin: 0; }
@@ -1675,3 +1675,6 @@ body {
 .w-photo-dialog::backdrop { background: #000d; }
 .w-photo-dialog img { display: block; max-width: 100%; max-height: 90dvh; margin: auto; object-fit: contain; }
 .w-photo-close { position: absolute; top: 12px; inset-inline-end: 12px; display: grid; place-items: center; background: #0009; color: white; border: 0; border-radius: 50%; padding: 8px; cursor: pointer; }
+
+.w-account-identity h3 > span { white-space: normal; overflow: visible; }
+.w-owner-handle { display: block; }
