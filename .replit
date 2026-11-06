@@ -1,8 +1,10 @@
+run = "pnpm dev"
 modules = ["nodejs-24", "python-base-3.13", "postgresql-16"]
 
 [deployment]
 router = "application"
-deploymentTarget = "autoscale"
+build = ["pnpm", "build"]
+run = ["pnpm", "start"]
 
 [deployment.postBuild]
 args = ["pnpm", "store", "prune"]

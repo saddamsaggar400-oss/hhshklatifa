@@ -53,3 +53,9 @@ node_modules/
 .env.*
 !.env.example
 .DS_Store
+
+# Local chat accounts, sessions and media
+**/data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
