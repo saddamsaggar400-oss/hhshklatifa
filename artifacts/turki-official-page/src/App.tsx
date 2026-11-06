@@ -1,3 +1,2 @@
-import ChatApp from "./chat/ChatApp";
-
-export default ChatApp;
+import Messenger from "../../wisal-hosted/components/Messenger";
+export default Messenger;

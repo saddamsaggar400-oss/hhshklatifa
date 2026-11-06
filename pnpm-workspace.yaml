@@ -36,6 +36,7 @@ minimumReleaseAgeExclude:
 
 packages:
   - artifacts/*
+  - '!artifacts/wisal-hosted'
   - lib/*
   - lib/integrations/*
   - scripts

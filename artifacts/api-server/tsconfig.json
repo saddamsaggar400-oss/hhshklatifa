@@ -4,8 +4,19 @@
     "incremental": true,
     "tsBuildInfoFile": ".tsbuildinfo",
     "outDir": "dist",
-    "rootDir": "src",
-    "types": ["node"]
+    "rootDir": "../..",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "ES2023",
+      "DOM",
+      "DOM.Iterable"
+    ]
   },
-  "include": ["src/index.ts", "src/app.ts", "src/chat/**/*.ts"]
+  "include": [
+    "src/index.ts",
+    "src/app.ts",
+    "src/chat/**/*.ts"
+  ]
 }

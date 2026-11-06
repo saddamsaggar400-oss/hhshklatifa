@@ -1,3 +1,3 @@
-import { createChatApp } from "./chat/app";
+import { createModernApp } from "./chat/modern-app";
 
-export default createChatApp();
+export default createModernApp().app;
